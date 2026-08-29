@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brandon Campbell</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+
+    <div class="left">
+        <h1 class="h1-intro">Hey All 🙌 I'm Brandon</h1>
+        <p class="warm-summary">I'm a software engineer based in Alabama with a BS in Software Engineering, currently pursuing a Master's in Computer Science with a focus on Machine Learning and AI. I've spent a lot of time relearning the math behind it all (linear algebra, calculus, and beyond) and building small projects to make sure the concepts actually stick, not just sit in a notebook somewhere.</p>
+        <p class="warm-summary">I've built a house price prediction model using scikit-learn, and I've also got an ELT pipeline project in progress as I explore the data engineering side of things. I like that kind of work: taking something messy and turning it into a system that actually makes sense.</p>
+        <p class="warm-summary">My path so far has been a mix of hands-on engineering and a lot of self-directed learning, and I'm looking forward to where the next few years take me. Thanks for stopping by. Take a look around, and if you want to talk shop about software, data, or machine learning, I'd love to hear from you.</p>
+
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/brandon-campbell-0941b7170/" class="social-icon">
+            <img src="{{ url_for('static', filename='LinkedIn.png') }}" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/Brandarius" class="social-icon">
+            <img src="{{ url_for('static', filename='GitHub.png') }}" alt="GitHub">
+          </a>
+          <a href="{{ url_for('resume') }}" class="social-icon">
+            <img src="{{ url_for('static', filename='Resume.png') }}" alt="Resume">
+          </a>
+        </div>
+    </div>
+    <div class="right">
+        <img src="{{ url_for('static', filename='PersonSittingAtDesk.png') }}" alt="Person Sitting at Desk Facing Away">
+    </div>
+
+
+<footer>
+    <p>&copy; 2026 Brandon Campbell</p>
+</footer>
+</body>
+</html>
